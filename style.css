@@ -4,3 +4,50 @@
     --secondarycolor: #5C6E6C; 
     --accentcolor: #D39D87; 
 }
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.btn{
+    
+padding: 16px 32px;
+border-radius: 30px;
+color: #fff;
+display: inline-block;
+font-weight: bold;
+font-size: 18px;
+text-align: justify;
+text-decoration: none;
+position: relative;
+}
+
+
+.btn.secondary{
+    background: var(--secondarycolor);
+}
+
+.btn.primary{
+    background: var(--accentcolor);
+}
+
+.btn.enroll-icon::before {
+    content: url("images/icon-2.svg");
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-40%);
+}
+
+.btn.enroll-icon {
+    padding-left: 60px;
+}
